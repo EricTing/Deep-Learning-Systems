@@ -8,7 +8,7 @@ import theano.tensor as T
 
 class LogisticReg:
     """A simple implementation of Logistic Regression,
-    Only works for two class classification, labels must 0 and 1
+    Only works for two class classification, labels must be 0 and 1
     """
 
     def __init__(self, learning_rate=0.01, C=1.0, max_iter=200, penalty=None):
@@ -33,7 +33,8 @@ class LogisticReg:
 
         probas = 1 / (1 + T.exp(-T.dot(x, w) - b))
 
-        # must use mean() rather than the sum() of individual cost, or there will be overflow
+        # FIXME: must use mean() rather than the sum() of individual cost, or there will be overflow
+        # use mean() can also make for the regularization coefficient $C$ independent of sample size
         if self._penalty == "l1":
             mean_nll = (-t * T.log(probas) - (1 - t) *
                         T.log(1 - probas)).mean() + self._C * T.abs_(w).sum()
