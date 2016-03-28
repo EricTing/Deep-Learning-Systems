@@ -1,10 +1,11 @@
 - [Deep Learning Systems](#sec-1)
   - [Topics](#sec-1-1)
   - [Course work](#sec-1-2)
-  - [Convolutional Neural Networks](#sec-1-3)
-    - [Theano tutorial](#sec-1-3-1)
+  - [Valuable papers](#sec-1-3)
+  - [Convolutional Neural Networks](#sec-1-4)
+    - [Theano tutorial](#sec-1-4-1)
 
-# Deep Learning Systems<a id="orgheadline6"></a>
+# Deep Learning Systems<a id="orgheadline7"></a>
 
 ## Topics<a id="orgheadline1"></a>
 
@@ -26,9 +27,13 @@
 
 ./\_csc7700
 
-## Convolutional Neural Networks<a id="orgheadline5"></a>
+## Valuable papers<a id="orgheadline3"></a>
 
-### Theano tutorial<a id="orgheadline4"></a>
+./paperlist.pdf
+
+## Convolutional Neural Networks<a id="orgheadline6"></a>
+
+### Theano tutorial<a id="orgheadline5"></a>
 
 1.  The Convolutional Operator
 
